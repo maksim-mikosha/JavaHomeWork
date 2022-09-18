@@ -9,10 +9,11 @@ public class program2 {
         Logger log = Logger.getAnonymousLogger();
         File file = new File("F:/GeekBrains/Java/JavaHomeWork/HomeWork_2/1", "Result.txt");
         try {
-            if (file.createNewFile()) log.log(Level.INFO, "File is created!");
+            if (file.createNewFile()) log.info("File is created!");
             try (FileWriter fw = new FileWriter("F:/GeekBrains/Java/JavaHomeWork/HomeWork_2/1/Result.txt", false)) {
                 fw.append(fillString(stringValue));
-                log.log(Level.INFO, "Data written to file.");
+                log.info("Data written to file.");
+                fw.close();
             }
         } catch (Exception exp) {
             log.log(Level.WARNING, "Something went wrong ");
