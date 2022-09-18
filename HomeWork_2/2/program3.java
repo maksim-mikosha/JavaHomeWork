@@ -15,8 +15,8 @@ public class program3 {
                 String s;
                 while ((s = br.readLine()) != null) {
                     String[] words = s.split(" ");
-                    log.log(Level.INFO, "Output string");
-                    System.out.printf("Ученик %s получил сегодня %s \n", words[0].toString(), words[1]);
+                    log.info("Output string");
+                    System.out.printf("Ученик %s получил сегодня %s \n", words[0], words[1]);
                 }
             } catch (Exception ex) {
                 log.log(Level.WARNING, "Something went wrong ", ex.getMessage());
