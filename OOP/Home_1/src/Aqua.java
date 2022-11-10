@@ -16,6 +16,6 @@ public class Aqua extends Product {
 
     @Override
     public String toString() {
-        return "Water - " + getName() + "(" + volume + ")" + " cost " + getCost();
+        return "Water - " + getName() + "(" + volume + ")";
     }
 }

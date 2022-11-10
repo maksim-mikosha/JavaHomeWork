@@ -16,6 +16,6 @@ public class Snacks extends Product {
 
     @Override
     public String toString() {
-        return "Snack - " + getName() + "(" + wight + ")" + " cost " + getCost();
+        return "Snack - " + getName() + "(" + wight + ")";
     }
 }
